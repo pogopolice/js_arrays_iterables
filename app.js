@@ -1,5 +1,5 @@
-const numbers = [1, 2, 3];
-console.log(numbers);
+// const numbers = [1, 2, 3];
+// console.log(numbers);
 
 // const moreNumbers = Array(5, 2);
 // console.log(moreNumbers);
@@ -7,21 +7,34 @@ console.log(numbers);
 // const yetMoreNumbers = Array.of(1, 2);
 // console.log(yetMoreNumbers);
 
-const listItems = document.querySelectorAll('li');
-console.log(listItems);
+// const listItems = document.querySelectorAll('li');
+// console.log(listItems);
+//
+// const arrayListItems = Array.from(listItems);
+// console.log(arrayListItems);
+//
+// const personalData = [30, 'Bill', {moreDetail: []}]
+//
+// const analyticsData = [[1, 1.6], [-5.4, 2.1]]
+//
+// for (const data of analyticsData) {
+  // for (const dataPoint of data) {
+    // console.log(dataPoint);
+  // }
+// }
+//
+// console.log(personalData[1]); // retrieve name Bill
 
-const arrayListItems = Array.from(listItems);
-console.log(arrayListItems);
 
-const hobbies = ['cooking', 'sports']
-const personalData = [30, 'Bill', {moreDetail: []}]
+const hobbies = ['Cooking', 'Sports']
+hobbies.push('Reading');  // add value to the END of the array
+hobbies.unshift('Coding');  // add value to the START of the array
+hobbies.pop(); // remove value from the END of the array
+// const poppedValue = hobbies.pop();
+// console.log(poppedValue);
+hobbies.shift();  // remove value from the START of the array
 
-const analyticsData = [[1, 1.6], [-5.4, 2.1]]
+hobbies[1] = 'Programming';
+// hobbies[5] = 'Collecting'; // rarely used
 
-for (const data of analyticsData) {
-  for (const dataPoint of data) {
-    console.log(dataPoint);
-  }
-}
-
-console.log(personalData[1]); // retrieve name Bill
+console.log(hobbies);
