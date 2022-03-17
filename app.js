@@ -34,7 +34,16 @@ hobbies.pop(); // remove value from the END of the array
 // console.log(poppedValue);
 hobbies.shift();  // remove value from the START of the array
 
-hobbies[1] = 'Programming';
-// hobbies[5] = 'Collecting'; // rarely used
+console.log(hobbies);
 
+//  Direct index access
+hobbies[1] = 'Programming';  // change the second element
+hobbies[5] = 'Collecting'; // skip over unused indexes (rarely used)
+
+console.log(hobbies, hobbies[4]);  // 4 is undefined
+
+hobbies.splice(1, 0, 'Good Food');
+console.log(hobbies);
+
+const removedElements = hobbies.splice(-2, 1);
 console.log(hobbies);
