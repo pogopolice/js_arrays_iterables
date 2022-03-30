@@ -26,24 +26,33 @@
 // console.log(personalData[1]); // retrieve name Bill
 
 
-const hobbies = ['Cooking', 'Sports']
-hobbies.push('Reading');  // add value to the END of the array
-hobbies.unshift('Coding');  // add value to the START of the array
-hobbies.pop(); // remove value from the END of the array
-// const poppedValue = hobbies.pop();
-// console.log(poppedValue);
-hobbies.shift();  // remove value from the START of the array
-
-console.log(hobbies);
-
+// const hobbies = ['Cooking', 'Sports']
+// hobbies.push('Reading');  // add value to the END of the array
+// hobbies.unshift('Coding');  // add value to the START of the array
+// hobbies.pop(); // remove value from the END of the array
+//  const poppedValue = hobbies.pop();
+//  console.log(poppedValue);
+// hobbies.shift();  // remove value from the START of the array
+//
+// console.log(hobbies);
+//
 //  Direct index access
-hobbies[1] = 'Programming';  // change the second element
-hobbies[5] = 'Collecting'; // skip over unused indexes (rarely used)
+// hobbies[1] = 'Programming';  // change the second element
+// hobbies[5] = 'Collecting'; // skip over unused indexes (rarely used)
+//
+// console.log(hobbies, hobbies[4]);  // 4 is undefined
+//
+// hobbies.splice(1, 0, 'Good Food');
+// console.log(hobbies);
+//
+// const removedElements = hobbies.splice(-2, 1);
+// console.log(hobbies);
 
-console.log(hobbies, hobbies[4]);  // 4 is undefined
 
-hobbies.splice(1, 0, 'Good Food');
-console.log(hobbies);
 
-const removedElements = hobbies.splice(-2, 1);
-console.log(hobbies);
+const testResults = [1, 5.3, 1.5, 10.99, -5, 10];
+const storedResults = testResults.slice(2);
+
+testResults.push(5.91);
+
+console.log(storedResults, testResults);
