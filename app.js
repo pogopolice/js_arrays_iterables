@@ -61,5 +61,22 @@ console.log(storedResults, testResults);
 console.log(testResults.indexOf(1.5));
 console.log(testResults.lastIndexOf(1.5));
 
+console.log(testResults.includes(10.99));
+console.log(testResults.indexOf(10.99) !== -1);
+
 const personData = [{name: 'Max'}, {name: 'Manuel'}];
 console.log(personData.indexOf({name: 'Manuel'}));  // returns -1 for not found
+
+const manuel = personData.find((person, idx, persons) => {
+  return person.name === 'Manuel';
+});
+
+manuel.name = 'Anna';
+
+console.log(manuel, personData);
+
+const maxIndex = personData.findIndex((person, idx, persons) => {
+  return person.name === 'Max';
+});
+
+console.log(maxIndex);
