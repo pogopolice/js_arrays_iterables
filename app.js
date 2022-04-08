@@ -108,4 +108,23 @@ const taxAdjustedPrices = prices.map((price, idx, prices) => {
   return priceObj;
 });
 
-console.log(taxAdjustedPrices);
+// console.log(taxAdjustedPrices);
+
+
+const sortedPrices = prices.sort((a, b) => {
+  if (a > b) {
+    return 1;
+  } else if (a === b) {
+    return 0;
+  } else {
+    return -1
+  }
+});
+console.log(sortedPrices);
+console.log(sortedPrices.reverse()); // it is better to sort in your logic instead
+
+const filteredArray = prices.filter((price, idx, prices) => {
+  return price > 6;
+});
+
+console.log(filteredArray);
